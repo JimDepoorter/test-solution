@@ -14,9 +14,7 @@
 
 body {
   margin: 0;
-  position: fixed;
 }
-
 router-outlet + *  {
   padding: 0 16px;
 }
@@ -138,10 +136,42 @@ app-top-bar h1 {
   border-radius: 2px;
   background-color: #EEEEEE;
 }
+.header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--PHS-Dark-color);
+  overflow-x: hidden;
+}
+.sidenav {
+  margin-top: 60px;
+  height: 100%;
+  width: 60px;
+  position: fixed;  
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--PHS-Dark-color);
+}
 
+.sidenav a {
+  padding: 5px;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
-app-left-bar{
-  height:100%;
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 60px; /* Same as the width of the sidenav */
+  margin-top: 60px;
+  position: fixed;
   width: 100%;
 }
 
