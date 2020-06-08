@@ -58,6 +58,8 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { LeftBarComponent } from './left-bar/left-bar.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 // the second parameter 'fr-FR' is optional
 registerLocaleData(localeFr, 'fr-FR');
@@ -69,6 +71,8 @@ registerLocaleData(localeFr, 'fr-FR');
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'home', component: HomeComponent },
       { path: 'producten/:productId', component: ProductDetailComponent },
       { path: 'products/:productId', component: ProductDetailComponent },
       { path: 'cart', component: CartComponent },
@@ -126,7 +130,9 @@ registerLocaleData(localeFr, 'fr-FR');
     ProductDetailComponent,
     CartComponent,
     ShippingComponent,
-    LeftBarComponent
+    LeftBarComponent,
+    LoginComponent,
+    HomeComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]

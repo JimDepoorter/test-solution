@@ -12,8 +12,11 @@
   --PHS-Grey-color: #D8D8D8;
 }
 
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 body {
   margin: 0;
+  background: var(--PHS-Dark-color);;
 }
 router-outlet + *  {
   padding: 0 16px;
@@ -115,7 +118,7 @@ app-top-bar {
   align-items: center;
 }
 
-app-top-bar h1 { 
+h1 { 
   font-family: Merriweather; 
   font-size: 16pt;
   font-weight: bold;
@@ -162,10 +165,6 @@ app-top-bar h1 {
   font-size: 25px;
   color: #818181;
   display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
 }
 
 .main {

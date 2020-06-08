@@ -9,24 +9,15 @@
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
 </nav> -->
-<body> 
-  <div class="header">
-    <app-top-bar>    
-    </app-top-bar>
-  </div>
-<div class="sidenav">
-    <app-left-bar>
-    </app-left-bar>
-</div>
-<div class="main">
-  <h2>Sidenav Example</h2>
-  <p>This sidenav is always shown.</p>
-</div>
+
    
-</body>
-<!-- <div class="container">  
+     <!-- <app-login (menu)='open($event)'>Your Form</app-login>
+  
+  <app-login [error]="'Username or password invalid'" 
+             (menu)='open($event)'>
+             Your Form With Error Message
+  </app-login> -->
   <router-outlet></router-outlet>
-</div> -->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
