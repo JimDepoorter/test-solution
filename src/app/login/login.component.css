@@ -12,6 +12,7 @@
       mat-card-content {
         display: flex;
         justify-content: center;
+        color: var(--PHS-Dark-color);
       }
 
       .error {
@@ -25,5 +26,33 @@
         display: flex;
         justify-content: center;
         background: var(--PHS-Dark-color);
+        -webkit-text-fill-color: white;
         border-radius: 5px;
       }
+
+      /* Border */
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: var(--PHS-Dark-color);
+}
+/* Font color */
+input.mat-input-element {
+  color: var(--PHS-Dark-color);
+}
+.mat-form-field{
+  color: var(--PHS-Dark-color);
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: var(--PHS-Dark-color) !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: var(--PHS-Dark-color)!important;
+} 
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: var(--PHS-Dark-color)!important;
+}
